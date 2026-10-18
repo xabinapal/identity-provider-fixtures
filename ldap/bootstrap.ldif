@@ -1,0 +1,175 @@
+dn: dc=example,dc=test
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: example
+o: Example Test Directory
+
+dn: ou=people,dc=example,dc=test
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=maren.ashcroft,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: maren.ashcroft
+cn: Maren Ashcroft
+sn: Ashcroft
+givenName: Maren
+mail: maren.ashcroft@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=nolan.quill,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: nolan.quill
+cn: Nolan Quill
+sn: Quill
+givenName: Nolan
+mail: nolan.quill@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=opal.rourke,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: opal.rourke
+cn: Opal Rourke
+sn: Rourke
+givenName: Opal
+mail: opal.rourke@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=pavel.dane,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: pavel.dane
+cn: Pavel Dane
+sn: Dane
+givenName: Pavel
+mail: pavel.dane@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=quincy.hale,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: quincy.hale
+cn: Quincy Hale
+sn: Hale
+givenName: Quincy
+mail: quincy.hale@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=rhea.calder,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: rhea.calder
+cn: Rhea Calder
+sn: Calder
+givenName: Rhea
+mail: rhea.calder@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=soren.whitlock,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: soren.whitlock
+cn: Soren Whitlock
+sn: Whitlock
+givenName: Soren
+mail: soren.whitlock@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=tamsin.greer,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: tamsin.greer
+cn: Tamsin Greer
+sn: Greer
+givenName: Tamsin
+mail: tamsin.greer@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=ulric.vale,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: ulric.vale
+cn: Ulric Vale
+sn: Vale
+givenName: Ulric
+mail: ulric.vale@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=vera.north,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: vera.north
+cn: Vera North
+sn: North
+givenName: Vera
+mail: vera.north@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=willa.firth,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: willa.firth
+cn: Willa Firth
+sn: Firth
+givenName: Willa
+mail: willa.firth@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: uid=xavier.mott,ou=people,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+uid: xavier.mott
+cn: Xavier Mott
+sn: Mott
+givenName: Xavier
+mail: xavier.mott@example.test
+userPassword: {SSHA}RyBKZd0nyYyBygqmt9ham0CelY8aGgMCFzk/aA==
+
+dn: cn=engineering,ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: groupOfNames
+cn: engineering
+member: uid=maren.ashcroft,ou=people,dc=example,dc=test
+member: uid=nolan.quill,ou=people,dc=example,dc=test
+member: uid=pavel.dane,ou=people,dc=example,dc=test
+
+dn: cn=finance,ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: groupOfNames
+cn: finance
+member: uid=opal.rourke,ou=people,dc=example,dc=test
+member: uid=quincy.hale,ou=people,dc=example,dc=test
+member: uid=vera.north,ou=people,dc=example,dc=test
+
+dn: cn=helpdesk,ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: groupOfNames
+cn: helpdesk
+member: uid=rhea.calder,ou=people,dc=example,dc=test
+member: uid=tamsin.greer,ou=people,dc=example,dc=test
+member: uid=willa.firth,ou=people,dc=example,dc=test
+
+dn: cn=directory-admins,ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: groupOfNames
+cn: directory-admins
+member: uid=soren.whitlock,ou=people,dc=example,dc=test
+member: uid=ulric.vale,ou=people,dc=example,dc=test
+
+dn: cn=research,ou=groups,dc=example,dc=test
+objectClass: top
+objectClass: groupOfNames
+cn: research
+member: uid=xavier.mott,ou=people,dc=example,dc=test
+member: uid=maren.ashcroft,ou=people,dc=example,dc=test
+member: uid=vera.north,ou=people,dc=example,dc=test
