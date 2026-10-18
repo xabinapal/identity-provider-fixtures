@@ -1,0 +1,121 @@
+issuer: $OIDC_ISSUER
+
+storage:
+  type: sqlite3
+  config:
+    file: /var/dex/dex.db
+
+web:
+  http: 0.0.0.0:5556
+
+oauth2:
+  skipApprovalScreen: true
+  responseTypes:
+    - code
+
+staticClients:
+  - id: example-fixture
+    name: Example OIDC fixture
+    secret: example-fixture-secret
+    redirectURIs:
+      - $OIDC_REDIRECT_URI
+
+enablePasswordDB: true
+
+staticPasswords:
+  - email: avery.blythe@example.test
+    username: avery.blythe
+    name: Avery Blythe
+    preferredUsername: avery.blythe
+    emailVerified: true
+    groups: [engineering, support]
+    userID: avery-blythe
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: bruno.keene@example.test
+    username: bruno.keene
+    name: Bruno Keene
+    preferredUsername: bruno.keene
+    emailVerified: true
+    groups: [engineering]
+    userID: bruno-keene
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: calla.rowan@example.test
+    username: calla.rowan
+    name: Calla Rowan
+    preferredUsername: calla.rowan
+    emailVerified: true
+    groups: [people-ops]
+    userID: calla-rowan
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: dashiell.morrow@example.test
+    username: dashiell.morrow
+    name: Dashiell Morrow
+    preferredUsername: dashiell.morrow
+    emailVerified: true
+    groups: [finance]
+    userID: dashiell-morrow
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: elowen.pike@example.test
+    username: elowen.pike
+    name: Elowen Pike
+    preferredUsername: elowen.pike
+    emailVerified: true
+    groups: [directory-admins, engineering]
+    userID: elowen-pike
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: felix.arden@example.test
+    username: felix.arden
+    name: Felix Arden
+    preferredUsername: felix.arden
+    emailVerified: true
+    groups: [support]
+    userID: felix-arden
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: greer.lowell@example.test
+    username: greer.lowell
+    name: Greer Lowell
+    preferredUsername: greer.lowell
+    emailVerified: true
+    groups: [finance]
+    userID: greer-lowell
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: holden.voss@example.test
+    username: holden.voss
+    name: Holden Voss
+    preferredUsername: holden.voss
+    emailVerified: true
+    groups: [directory-admins]
+    userID: holden-voss
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: indra.welles@example.test
+    username: indra.welles
+    name: Indra Welles
+    preferredUsername: indra.welles
+    emailVerified: true
+    groups: [people-ops, support]
+    userID: indra-welles
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: jory.fenn@example.test
+    username: jory.fenn
+    name: Jory Fenn
+    preferredUsername: jory.fenn
+    emailVerified: true
+    groups: [engineering]
+    userID: jory-fenn
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: kellan.sable@example.test
+    username: kellan.sable
+    name: Kellan Sable
+    preferredUsername: kellan.sable
+    emailVerified: true
+    groups: [finance, support]
+    userID: kellan-sable
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
+  - email: livia.marlowe@example.test
+    username: livia.marlowe
+    name: Livia Marlowe
+    preferredUsername: livia.marlowe
+    emailVerified: true
+    groups: [directory-admins, engineering]
+    userID: livia-marlowe
+    hash: "$2a$10$2b2cU8CPhOTaGrs1HRQuAueS7JTT5ZHsHSzYiFPm1leZck7Mc8T4W"
